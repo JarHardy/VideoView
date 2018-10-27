@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="TicketApp" style="height:100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Video View</title>
+    @Styles.Render("~/bundles/CSS")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/Content")
+    @RenderSection("scripts", required: false)
+
+</html>

@@ -1,0 +1,48 @@
+5
+1 <============ client ID 
+03/20/1992
+03/20/1992
+5
+3
+5
+03/20/1992
+03/20/1992
+03/20/1992
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+.
+.
+.
+.
+.
+
+ THis WORKS!!!
+
+
+
+
+{System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "JOB_TICKET_techLoggedBy_FK". The conflict occurred in database "whd_test", table "dbo.TECH", column 'CLIENT_ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TicketApp.Models.ticketDAO.test(Ticket ticket) in c:\Users\HardyJN\Documents\Visual Studio 2013\Projects\TicketApp\TicketApp\Models\DAOs\ticketDAO.cs:line 95
+ClientConnectionId:17684e5c-df2e-467d-af31-7fc9d712d54c
+Error Number:547,State:0,Class:16}
