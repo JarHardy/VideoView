@@ -20,5 +20,5 @@
             console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
         });
     };
-
+    //changing to add for test
 }]);
