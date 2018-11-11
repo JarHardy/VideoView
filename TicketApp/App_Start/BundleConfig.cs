@@ -12,12 +12,17 @@ namespace TicketApp
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
             "~/Scripts/jquery-{version}.js"));
 
+
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                          "~/Scripts/angular/bootstrap.js",
-                          "~/Scripts/angular/angular.js",
-                          "~/Scripts/angular/angular-animate.js",
-                          "~/Scripts/angular/ui-bootstrap-tpls-0.13.0.js",
-                          "~/Scripts/angular/angular-route.js"));
+              "~/Scripts/angular/bootstrap.js",
+              "~/Scripts/angular/angular.js",
+              "~/Scripts/angular/angular-animate.js",
+              "~/Scripts/angular/ui-bootstrap-tpls-0.13.0.js",
+              "~/Scripts/angular/ng-file-upload-all.js",
+              "~/Scripts/angular/ng-file-upload-shim.js",
+              "~/Scripts/angular/ng-file-upload.js",
+              "~/Scripts/angular/angular-route.js"
+              ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
            "~/Scripts/app/app_module.js",
@@ -29,6 +34,7 @@ namespace TicketApp
                  "~/Content/partials/videoUploadPage/videoUploadPageCtrl.js",
                 "~/Content/partials/main/mainCtrl.js"
                  ));
+
 
             var style_bundle = new StyleBundle("~/bundles/CSS").Include(
                 "~/Content/assets/styles/site.css",

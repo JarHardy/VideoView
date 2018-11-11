@@ -1,4 +1,4 @@
-﻿var app = angular.module('TicketApp', ['ngRoute']);
+﻿var app = angular.module('TicketApp', ['ngRoute', 'ngFileUpload']);
 
 app.config(['$routeProvider', function dataConfig($routeProvider) {
 

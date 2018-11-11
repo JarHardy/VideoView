@@ -17,14 +17,21 @@
         <!-- Modal content -->
         <div class="modal-content">
 
-                <h3 class="text-center"><i class="fa fa-lock"></i>Upload a video to VideoView</h3>
-                <form>
-                    <input type="file" id="file" name="file" accept="file_extension|audio/*|video/*|image/*|media_type" />
-                    <br /><br /><button ng-click="getVideo()">Upload</button>
-                </form>
+            <h3 class="text-center"><i class="fa fa-lock"></i>Upload a video to VideoView</h3>
+            <!--<form>
+                <input type="file" id="file" name="file" accept="file_extension|audio/*|video/*|image/*|media_type" />
+                <br /><br /><button ng-click="getVideo()">Upload</button>
+            </form>-->
         </div>
 
     </div>
 
- </div>
+    <form ng-controller="videoUploadPageCtrl" name="form">
+        <--Single Image with validations-->
+            <div class="button" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">Select</div>
+
+
+            <button type="submit" ng-click="submit()">submit</button>
+    </form>
+</div>
 
